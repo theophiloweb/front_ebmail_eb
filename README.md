@@ -4,6 +4,12 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
+## Visão Geral da Tela
+
+![Tela de Login](/tela.png)
+
+- [Font Awesome](https://fontawesome.com/) (versão 6.4.0) - Utilizado para ícones na interface.
+
 ## Objetivo
 
 Este projeto implementa uma tela de login responsiva para Webmail. A interface foi desenvolvida para proporcionar uma experiência de usuário intuitiva e segura, mantendo a identidade visual da instituição.
