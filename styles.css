@@ -1,0 +1,159 @@
+/* Estilos gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    overflow-x: hidden; /* Previne rolagem horizontal em todo o body */
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+}
+
+/* Banner à esquerda */
+.banner {
+    flex: 0 0 75%; /* 75% do espaço */
+    background-image: url('../images/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Área de login à direita */
+.login-area {
+    flex: 0 0 25%; /* 25% do espaço */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #f3f4f6;
+    box-sizing: border-box; /* Inclui padding na largura total */
+}
+
+.login-container {
+    width: 100%;
+    max-width: 280px; /* Reduzido um pouco mais */
+}
+
+/* Logo e título */
+.logo-container {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-top: 0.5rem;
+}
+
+/* Formulário de login */
+.login-form {
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    margin-bottom: 0.75rem;
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon input {
+    width: 100%; 
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+    box-sizing: border-box; 
+}
+
+.input-with-icon .icon {
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    font-size: 0.8rem;
+}
+
+.login-button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.login-button:hover {
+    background-color: #4338ca;
+}
+
+.login-button .icon {
+    margin-right: 0.5rem;
+}
+
+/* Checkbox "Permanecer conectado" */
+#keep-connected {
+    font-family: 'Courier New', Courier, monospace !important;
+    font-size: 10px !important;
+}
+
+/* Link "Esqueceu sua senha?" */
+.forgot-password {
+    text-align: right;
+    margin-top: 0.75rem;
+}
+
+.forgot-password a {
+    color: #4f46e5;
+    font-size: 0.7rem;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    font-size: 0.6rem;
+    color: #6b7280;
+    margin-top: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .banner {
+        flex: 0 0 30%;
+    }
+
+    .login-area {
+        flex: 0 0 70%;
+    }
+
+    .login-container {
+        max-width: 100%;
+    }
+}
